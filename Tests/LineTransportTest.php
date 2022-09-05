@@ -1,6 +1,6 @@
 <?php
 
-namespace Kurozumi\Symfony\Component\Notifier\Bridge\Line\Tests;
+namespace Kurozumi\Notifier\Bridge\Line\Tests;
 
 use Kurozumi\Symfony\Component\Notifier\Bridge\Line\LineTransport;
 use Symfony\Component\HttpClient\MockHttpClient;

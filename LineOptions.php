@@ -1,6 +1,6 @@
 <?php
 
-namespace Kurozumi\Symfony\Component\Notifier\Bridge\Line;
+namespace Kurozumi\Notifier\Bridge\Line;
 
 use Symfony\Component\Notifier\Message\MessageOptionsInterface;
 
