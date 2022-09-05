@@ -25,7 +25,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Kurozumi\\Symfony\\Component\\Notifier\\Bridge\\Line": ""
+      "Kurozumi\\Symfony\\Component\\Notifier\\Bridge\\Line\\": ""
     },
     "exclude-from-classmap": [
       "/Tests/"
