@@ -10,6 +10,13 @@ DSN example
 LINE_DSN=line://TOKEN@default
 ```
 
+Install
+-----------
+
+```
+composer req kurozumi/line-notifier
+```
+
 Setting
 -----------
 
