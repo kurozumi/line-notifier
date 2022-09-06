@@ -18,7 +18,7 @@ Setting
 framework:
     notifier:
         chatter_transports: 
-           line: '%env(LINE_DSN)'
+           line: '%env(LINE_DSN)%'
 ```
 
 ```
