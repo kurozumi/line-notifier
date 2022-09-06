@@ -9,3 +9,27 @@ DSN example
 ```
 LINE_DSN=line://TOKEN@default
 ```
+
+Setting
+-----------
+
+```yaml
+# notifier.yaml
+framework:
+    notifier:
+        chatter_transports: 
+           line: '%env(LINE_DSN)'
+```
+
+```
+# .env
+LINE_DSN=line://TOKEN@default
+```
+
+```yaml
+# services.yaml
+services:
+  Kurozumi\Notifier\Bridge\Line\LineTransportFactory:
+    parent: notifier.transport_factory.abstract
+    tags: ['chatter.transport_factory']
+```
