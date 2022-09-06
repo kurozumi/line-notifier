@@ -2,7 +2,7 @@
 
 namespace Kurozumi\Notifier\Bridge\Line\Tests;
 
-use Kurozumi\Symfony\Component\Notifier\Bridge\Line\LineTransport;
+use Kurozumi\Notifier\Bridge\Line\LineTransport;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\Notifier\Exception\LengthException;
 use Symfony\Component\Notifier\Exception\TransportException;
@@ -41,7 +41,7 @@ final class LineTransportTest extends TransportTestCase
         $transport = $this->createTransport();
 
         $this->expectException(LengthException::class);
-        $this->expectExceptionMessage('The subject length of a Discord message must not exceed 2000 characters.');
+        $this->expectExceptionMessage('The subject length of a Line message must not exceed 1000 characters.');
 
         $transport->send(new ChatMessage(str_repeat('囍', 1001)));
     }

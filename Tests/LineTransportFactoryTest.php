@@ -2,7 +2,7 @@
 
 namespace Kurozumi\Notifier\Bridge\Line\Tests;
 
-use Kurozumi\Symfony\Component\Notifier\Bridge\Line\LineTransportFactory;
+use Kurozumi\Notifier\Bridge\Line\LineTransportFactory;
 use Symfony\Component\Notifier\Test\TransportFactoryTestCase;
 
 class LineTransportFactoryTest extends TransportFactoryTestCase
